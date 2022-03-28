@@ -1,0 +1,110 @@
+.card {
+    margin: auto;
+    width: 90%;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--very-pale-blue);
+}
+
+.card-image {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card__about {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__about-title {
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: var(--dark-blue);
+}
+
+.card__about-text {
+    color: var(--desaturated-blue);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.card__price {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    padding: 1.5rem 2.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;    
+}
+
+.card__price-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2; 
+}
+
+.card__price-title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    grid-column: 2;
+    grid-row: 1;
+    box-sizing: border-box;
+    padding-left: 1rem;  
+    font-size: 1rem;
+}
+
+.card__price-text {
+    color: var(--desaturated-blue);
+    font-size: 1rem;
+    grid-column: 2;
+    grid-row: 2;
+    box-sizing: border-box;
+    padding-left: 1rem;    
+    font-weight: 500;
+}
+
+.card__price-link {
+    color: var(--bright-blue);
+    font-size: .8rem;
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    text-decoration: underline;
+    box-sizing: border-box;
+    font-weight: 700;
+    justify-self: flex-end;
+}
+
+.card__cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.5rem 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card__cta-button {
+    background-color: var(--bright-blue);
+    width: 100%;
+    color: var(--very-pale-blue);
+    border-radius: 10px;
+    font-weight: 700;
+    height: 3rem;
+}
+
+.card__cta-link {
+    color: var(--desaturated-blue);
+    font-weight: 700;
+}
