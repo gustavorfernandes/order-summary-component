@@ -7,6 +7,7 @@
     align-items: center;
     border-radius: 20px;
     background-color: var(--very-pale-blue);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 29px 0px;
 }
 
 .card-image {
@@ -82,6 +83,13 @@
     box-sizing: border-box;
     font-weight: 700;
     justify-self: flex-end;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.card__price-link:hover {
+    text-decoration: none;
+    color: var(--very-bright-blue);
 }
 
 .card__cta {
@@ -102,9 +110,21 @@
     border-radius: 10px;
     font-weight: 700;
     height: 3rem;
+    transition: .2s;
+    cursor: pointer;    
+}
+
+.card__cta-button:hover {
+    background-color: var(--very-bright-blue);
 }
 
 .card__cta-link {
     color: var(--desaturated-blue);
     font-weight: 700;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.card__cta-link:hover {
+    color: var(--dark-blue);
 }

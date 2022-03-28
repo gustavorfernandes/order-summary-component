@@ -1,6 +1,7 @@
 :root {
 --pale-blue: hsl(225, 100%, 94%);
 --bright-blue: hsl(245, 75%, 52%);
+--very-bright-blue: hsl(253, 75%, 58%);
 --very-pale-blue: hsl(225, 100%, 98%);
 --desaturated-blue: hsl(224, 23%, 55%);
 --dark-blue: hsl(223, 47%, 23%);
@@ -15,5 +16,7 @@ body {
     align-items: center;
     justify-items: center;
     background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
-
